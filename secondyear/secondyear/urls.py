@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from anniversary.views import test
+from anniversary.views import home,happyanniversary
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^test/',test)
+    url(r'home/',home),
+    url(r'happyanniversary/',happyanniversary),
 ]

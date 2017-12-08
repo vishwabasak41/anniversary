@@ -119,9 +119,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/vishwarupa/Documents/SUYASH/suyash/secondyear/anniversary/static_root'
+STATIC_ROOT = '/home/vishwarupa/Documents/SUYASH/suyash/secondyear/STATIC_ROOT'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static_root"),
+    '/home/vishwarupa/Documents/SUYASH/suyash/secondyear/anniversary/static'
 
 ]
