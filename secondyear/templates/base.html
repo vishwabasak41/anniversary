@@ -49,19 +49,26 @@ HOME
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
 <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 </head>
 <body>
 <div style="margin:0px 0px 0px 0px ;" id="background1" class="fadeIn animated">
-<div style="padding-top:10px;background-color: rgb(255,105,180); opacity:0.6;">
-<h1 style="padding-top:10px;padding-left:320px;padding-bottom:70px; font-family:'Sofia',bold sans-serif;font-size: 50px;color:white;opacity:0.9;">
+<div style="padding-top:10px;background-color:rgb(108,194,1); opacity:0.8;">
+<h1 style="padding-top:10px;padding-left:230px;padding-bottom:70px; font-family:'Fondamento',bold sans-serif;font-size: 80px;color:white;opacity:0.9;">
 <b>HAPPY ANNIVERSARY</b></h1>
 </div>
-<a href="/happyanniversary/" class="btn btn-info btn-lg hvr-grow" id="enter" style="border-radius: 50%;background-color: rgb(255,105,180); opacity:0.8;margin-left: 1100px;padding:30px 30px 30px 30px; ">
+<a href="/surprize/" class="btn btn-info btn-lg hvr-grow" id="enter" style="border-radius: 50%;background-color: rgb(108,194,1); opacity:0.8;margin-left: 1100px;padding:30px 30px 30px 30px; ">
           <span style="color:white;" class="glyphicon glyphicon-chevron-right"></span>
         </a>
 </div>
+<audio id="my_audio" src="{% static 'Ellie Goulding Love Me Like You Do - 1424726965.mp3' %}" loop="loop"></audio>
+
 
 </body>
+<script type="text/javascript">
+    window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
 </html>

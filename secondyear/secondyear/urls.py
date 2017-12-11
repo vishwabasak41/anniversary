@@ -15,10 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from anniversary.views import home,happyanniversary
+from anniversary.views import home,surprize,happyanniversary,fifteen
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'home/',home),
     url(r'happyanniversary/',happyanniversary),
+    url(r'surprize/',surprize),
+    url(r'2015/', fifteen),
+
+
 ]

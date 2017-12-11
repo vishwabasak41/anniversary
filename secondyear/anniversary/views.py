@@ -8,4 +8,10 @@ def home(request):
 def happyanniversary(request):
 	return render(request,'happyanniversary.html',{})
 
+def surprize(request):
+	return render(request,'page2.html',{})
+
+def fifteen(request):
+	return render(request,'2015.html',{})
+
 
