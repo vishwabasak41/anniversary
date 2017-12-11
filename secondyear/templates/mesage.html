@@ -1,0 +1,71 @@
+{% load static %}
+<html>
+<head>
+<title>
+LOVE YOU
+</title>
+<style>
+#background1{
+    background-image: url("{% static '2.jpg' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:768px;
+    width:1340px;
+    margin: 0px 0px 0px 0px;
+
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+.zoomIn{
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet'>
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+</head>
+<body>
+<div style="margin:0px 0px 0px 0px ;" id="background1" class="fadeIn animated">
+<div style="padding-top:10px;background-color:rgb(108,194,1); opacity:0.8;">
+<h1 style="padding-top:10px;padding-left:230px;padding-bottom:70px; font-family:'Fondamento',bold sans-serif;font-size: 50px;color:rgb(20,20,20);opacity:0.9;">
+<b >FOR YOU<span class="glyphicon glyphicon-heart"></span></b></h1>
+</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+    window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
+</html>

@@ -20,4 +20,5 @@ def sixteen(request):
 def seventeen(request):
 	return render(request,'2017.html',{})
 
-
+def mesage(request):
+	return render(request,'mesage.html',{})
