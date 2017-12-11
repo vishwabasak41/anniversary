@@ -17,4 +17,7 @@ def fifteen(request):
 def sixteen(request):
 	return render(request,'2016.html',{})
 
+def seventeen(request):
+	return render(request,'2017.html',{})
+
 

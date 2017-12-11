@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from anniversary.views import home,surprize,happyanniversary,fifteen,sixteen
+from anniversary.views import home,surprize,happyanniversary,fifteen,sixteen,seventeen
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'surprize/',surprize),
     url(r'2015/', fifteen),
     url(r'2016/', sixteen),
+    url(r'2017/', seventeen),
 
 
 ]

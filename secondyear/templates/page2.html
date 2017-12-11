@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="{% static 'css/animate.css' %}">
 <style>
 body{
-    background-color:rgb(100,100,100);;
+    background-color:rgb(100,100,100);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -363,7 +363,20 @@ body{
              </section>
          </div>
 
+<audio id="my_audio" src="{% static 'u_me.mp3' %}" loop="loop"></audio>
 
+
+
+
+<script type = "text/javascript" 
+         src = "{% static 'js/jquery.min.js' %}"></script>
+
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+    document.getElementById("my_audio").play();
+}
+</script>
 
 
 <script type = "text/javascript" 
