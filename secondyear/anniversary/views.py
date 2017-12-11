@@ -14,4 +14,7 @@ def surprize(request):
 def fifteen(request):
 	return render(request,'2015.html',{})
 
+def sixteen(request):
+	return render(request,'2016.html',{})
+
 
